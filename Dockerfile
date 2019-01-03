@@ -22,6 +22,8 @@ COPY mvn/settings.xml /usr/share/maven/conf/settings.xml
 
 COPY SlaveTestService /home/aft/SlaveTestService
 
+RUN chmod +x /home/aft/SlaveTestService/target/classes/drivers/linux/chromedriver
+
 COPY scripts/start_test_slave.sh /home/aft/SlaveTestService/start_test_slave.sh
 
 WORKDIR /home/aft/SlaveTestService
