@@ -30,6 +30,8 @@ RUN chmod +x /home/aft/SlaveTestService/target/classes/drivers/linux/chromedrive
 
 COPY scripts/start_test_slave.sh /home/aft/SlaveTestService/start_test_slave.sh
 
+COPY scripts/start_test_slave_hi_res.sh /home/aft/SlaveTestService/start_test_slave_hi_res.sh
+
 WORKDIR /home/aft/SlaveTestService
 
 RUN mkdir /home/aft/mvn_repo
